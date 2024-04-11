@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailThreadUseCase should not show deleted comment 1`] = `
+Object {
+  "body": "sebuah body",
+  "comments": Array [
+    Object {
+      "content": "sebuah content",
+      "date": "2024-04-04",
+      "id": "comment-123",
+      "username": "user-123",
+    },
+    Object {
+      "content": "**komentar telah dihapus**",
+      "date": "2024-04-04",
+      "id": "comment-234",
+      "username": "user-1234",
+    },
+  ],
+  "date": "2024-04-04",
+  "id": "thread-123",
+  "title": "sebuah title",
+  "username": "user-123",
+}
+`;
+
+exports[`DetailThreadUseCase should orchestrating the add thread action correctly 1`] = `
+Object {
+  "body": "sebuah body",
+  "comments": Array [
+    Object {
+      "content": "sebuah content",
+      "date": "2024-04-04",
+      "id": "comment-123",
+      "username": "user-123",
+    },
+    Object {
+      "content": "**komentar telah dihapus**",
+      "date": "2024-04-04",
+      "id": "comment-234",
+      "username": "user-1234",
+    },
+  ],
+  "date": "2024-04-04",
+  "id": "thread-123",
+  "title": "sebuah title",
+  "username": "user-123",
+}
+`;
