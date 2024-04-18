@@ -7,7 +7,7 @@ const routes = (handler) => ([
     handler: handler.postUserHandler,
 
     options: {
-      description: 'POST user',
+      description: 'POST users',
       notes: 'TEST',
       tags: ['api', 'user'],
       validate: {
@@ -15,7 +15,7 @@ const routes = (handler) => ([
           fullname: Joi.string(),
           username: Joi.string(),
           password: Joi.string(),
-        }).label('POST-user-validate')
+        }).label('POST-users-validate')
       },
       response: {
         schema: Joi.object({
