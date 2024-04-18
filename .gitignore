@@ -4,3 +4,4 @@ package-lock.json
 coverage
 config/database/test.json
 .env
+.nginx.conf
