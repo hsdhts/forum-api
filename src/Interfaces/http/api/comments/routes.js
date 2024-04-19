@@ -13,7 +13,7 @@ const routes = (handler) => [
       validate: {
         payload: Joi.object({
           content: Joi.string()
-        }).label('Post-comment-validate'),
+        }).label('Post-comments-validate'),
         headers: Joi.object({
           accessToken: Joi.string().required(),
         })
@@ -27,7 +27,7 @@ const routes = (handler) => [
               content: Joi.string(),
               owner: Joi.string(),
             }
-          })
+          }).label('POST-comments-response')
         })
       }
     }
@@ -46,7 +46,7 @@ const routes = (handler) => [
         payload: Joi.object({
           threadId: Joi.string(),
           commentId: Joi.string(),
-        }).label('DELETE-comment-validate'),
+        }).label('DELETE-comments-validate'),
         headers: Joi.object({
           accessToken: Joi.string().required(),
         }).unknown()
@@ -54,21 +54,10 @@ const routes = (handler) => [
       response: {
         schema: Joi.object({
           status: Joi.string().valid('success'),
-        })
+        }).label('DELETE-comments-response')
       }
     }
   },
 ];
 
 module.exports = routes;
-
-// options: {
-//   description: 'DELETE comments in thread',
-//   notes: 'TEST',
-//   tags: ['api', 'comments'],
-//   validate: {
-//     payload: Joi.object({
-      
-//     })
-//   }
-// }

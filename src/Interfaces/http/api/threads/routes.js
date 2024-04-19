@@ -28,7 +28,7 @@ const routes = (handler) => [
               title: Joi.string(),
               owner: Joi.string(),
             }
-          })
+          }).label('POST-threads-response')
         })
       }
     }
@@ -56,7 +56,7 @@ const routes = (handler) => [
           data: Joi.object({
             title: Joi.string(),
             owner: Joi.string(),
-          })
+          }).label('GET-threads-response')
         })
       }
     }

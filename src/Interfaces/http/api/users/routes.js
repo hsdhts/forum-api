@@ -24,7 +24,7 @@ const routes = (handler) => ([
             id: Joi.string(),
             fullname: Joi.string(),
             username: Joi.string(),
-          })
+          }).label('POST-users-response')
         })
       }
     }
