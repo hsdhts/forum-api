@@ -46,27 +46,27 @@ npm install
 2. Open the `.env.example file` in the root directory of your project
 ```bash
 # HTTP SERVER
-HOST={define your host}
-PORT={define your port }
+HOST=YOUR_HOST_SERVER
+PORT=YOUR_PORT_SERVER
 
 # POSTGRES
-PGHOST={define your postgres host}
-PGUSER={define your postgres username}
-PGDATABASE={define your postgres database}
-PGPASSWORD={define your postgres password}
-PGPORT={define your postgres port}
+PGHOST=YOUR_POSTGRES_HOST
+PGUSER=YOUR_POSTGRES_USERNAME
+PGDATABASE=YOUR_POSTGRES_DATABASE
+PGPASSWORD=YOUR_POSTGRES_PASSWORD
+PGPORT=YOUR_POSTGRES_PORT
 
 # POSTGRES TEST
-PGHOST_TEST={define your postgres host test}
-PGUSER_TEST={define your postgres user_test}
-PGDATABASE_TEST={define your postgres database_test}
-PGPASSWORD_TEST={define your postgres password_test}
-PGPORT_TEST={define your postgres host_test}
+PGHOST_TEST=YOUR_POSTGRES_USERNAME_TEST
+PGUSER_TEST=YOUR_POSTGRES_POSTGRES_TEST
+PGDATABASE_TEST=YOUR_POSTGRES_DATABASE_TEST
+PGPASSWORD_TEST=YOUR_POSTGRES_PASSWORD_TEST
+PGPORT_TEST=YOUR_POSTGRES_PORT_TEST
 
 # TOKENIZE
-ACCESS_TOKEN_KEY={define your accessToken}
-REFRESH_TOKEN_KEY={define your refreshToken}
-ACCCESS_TOKEN_AGE={define your accessTokenAge}
+ACCESS_TOKEN_KEY=YOUR_POSTGRES_ACCESS_TOKEN_KEY_TEST
+REFRESH_TOKEN_KEY=YOUR_POSTGRES_REFRESH_TOKEN_KEY_TEST
+ACCCESS_TOKEN_AGE=YOUR_POSTGRES_ACCESS_TOKEN_KEY_TEST
 
 ```
    
