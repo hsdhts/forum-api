@@ -1,8 +1,8 @@
 const ClientError = require('../../Commons/exceptions/ClientError');
 const Hapi = require('@hapi/hapi');
-const HapiSwagger = require('hapi-swagger');
-const Inert = require('@hapi/inert')
-const Vision = require('@hapi/vision')
+// const HapiSwagger = require('hapi-swagger');
+// const Inert = require('@hapi/inert')
+// const Vision = require('@hapi/vision')
 const DomainErrorTranslator = require('../../Commons/exceptions/DomainErrorTranslator');
 const threads = require('../../Interfaces/http/api/threads');
 const comments = require('../../Interfaces/http/api/comments');
@@ -15,12 +15,12 @@ const createServer = async (container) => {
     port: process.env.PORT,
   });
 
-const swaggerOptions = {
-  info : {
-    title: 'Forum API Documentation',
-    version: '1.0.0',
-  }
-}
+// const swaggerOptions = {
+//   info : {
+//     title: 'Forum API Documentation',
+//     version: '1.0.0',
+//   }
+// }
 
   await server.register([
     {
@@ -39,16 +39,16 @@ const swaggerOptions = {
       plugin: comments,
       options: { container },
     },
-    {
-      plugin: Inert,
-    }, 
-    {
-      plugin: Vision, 
-    },
-    {
-      plugin: HapiSwagger,
-      options: swaggerOptions
-    }
+    // {
+    //   plugin: Inert,
+    // }, 
+    // {
+    //   plugin: Vision, 
+    // },
+    // {
+    //   plugin: HapiSwagger,
+    //   options: swaggerOptions
+    // }
   ]);
 
   server.route({
