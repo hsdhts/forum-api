@@ -44,37 +44,7 @@ This project run in node js version 18.13.0.
 npm install
 ```
 2. Open the `.env.example file` in the root directory of your project
-3. Copy and paste `.env.example` file into `.env` file in your project 
-4. Create config/database/test.json to configuration of database test
-```bash 
-mkdir config/database/test.json  
-```
 ```bash
-DB_HOST= {define your db host}
-DB_USERNAME= {define your db username}
-DB_PASSWORD= {define your db password}
-DB_NAME= {define your db name}
-
-```
-
-5. Run server:
-<P>-development<p>
-
-```bash
-npm run start-dev
-```
-<p>-production<p>
-
-```bash 
-npm run start  
-```
-
-# Environment (.env file)
-
-In order to run this project, you need to configure the following environment variables:
-
-```bash
-
 # HTTP SERVER
 HOST={define your host}
 PORT={define your port }
@@ -98,7 +68,34 @@ ACCESS_TOKEN_KEY={define your accessToken}
 REFRESH_TOKEN_KEY={define your refreshToken}
 ACCCESS_TOKEN_AGE={define your accessTokenAge}
 
+```
+   
+3. Copy and paste `.env.example` file into `.env` file in your project 
+4. Create config/database/test.json to configuration of database test
+```bash 
+mkdir config/database/test.json  
+```
+```bash
+{
+  "user": YOUR_USER_POSTGRES,
+  "password": YOUR_PASSWORD_POSTGRES,
+  "host": YOUR_HOST_POSTGRES,
+  "port": YOUR_PORT_POSTGRES,
+  "database": YOUR_DATABASE_POSTGRES
+}
 
+```
+
+5. Run server:
+<P>-development<p>
+
+```bash
+npm run start-dev
+```
+<p>-production<p>
+
+```bash 
+npm run start  
 ```
 
 ### Dependency
