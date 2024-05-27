@@ -112,4 +112,4 @@ npm run start
 
 # Pull Requests
 
-I'd be happy to review any pull requests that may better the TanamIn project, in particular if you have a bug fix, enhancement, or a new idea, you can contact us.
+I'd be happy to review any pull requests that may better the forum API project, in particular if you have a bug fix, enhancement, or a new idea, you can contact us.
